@@ -12,6 +12,17 @@ class EcigSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $Ecig_array = config('array');
+
+        foreach ($Ecig_array as $item){
+            $newEcig = new Ecig;
+            $newEcig -> marca = $item['marca'];
+            $newEcig ->tipologia = $item['tipologia'];
+            $newEcig -> liquidi = $item['liquidi'];
+            $newEcig -> prezzo = $item['prezzo'];
+            $newEcig -> description = $item['description'];
+
+            $newEcig -> save();
+        }
     }
 }

@@ -1,7 +1,5 @@
 <?php
-return
-
-$ecig_array = [
+return [
     [
         'marca' => 'GeekVape',
         'tipologia' => 'box con circuito',
