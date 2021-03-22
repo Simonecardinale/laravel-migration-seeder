@@ -1,1 +1,22 @@
-//
+@import 'node_modules/bootstrap/scss/bootstrap';	
+
+.container-jumbotron {
+    height: calc(100vh - 56px);
+    background-image: url('https://cdn.pixabay.com/photo/2021/03/02/12/34/hellfire-6062296_960_720.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.layover {
+    height: calc(100vh - 56px);
+    opacity: 0.6;
+}
+
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
