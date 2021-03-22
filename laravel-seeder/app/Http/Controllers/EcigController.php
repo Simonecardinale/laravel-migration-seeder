@@ -46,9 +46,10 @@ class EcigController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Ecig $ecig)
     {
-        //
+        $data = ['element' => $ecig];
+        return view('ecig.show', $data);
     }
 
     /**

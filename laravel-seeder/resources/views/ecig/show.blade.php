@@ -13,22 +13,13 @@
       </tr>
     </thead>
     <tbody>
-        @foreach ($ecig as $element)
       <tr>
-            {{-- <td>{{ $element['marca'] }}</td>
-            <td>{{ $element['tipologia'] }}</td>
-            <td>{{ $element['prezzo'] }}</td>
-            <td>{{ $element['liquidi'] }}</td>
-            <td>{{ $element['description'] }}</td> --}}
-
             <td>{{ $element -> marca }}</td>
             <td>{{ $element -> tipologia }}</td>
             <td>{{ $element -> prezzo }}</td>
             <td>{{ $element -> liquidi }}</td>
             <td>{{ $element -> description }}</td>
-            <td><a href="{{ route('ecig.show', ['ecig' => $element -> id]) }}"><button type="button" class="btn btn-secondary">Dettagli</button></a></td>
-          </tr>
-          @endforeach
-        </tbody>
+        </tr>
+    </tbody>
   </table>
 @endsection
