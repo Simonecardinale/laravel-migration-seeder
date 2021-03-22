@@ -32,7 +32,7 @@ class EcigSeeder extends Seeder
             $newEcig ->tipologia = $faker->ean8();
             $newEcig -> liquidi = $faker->word();
             $newEcig -> prezzo =  $faker->randomFloat(2, 1, 999);
-            $newEcig -> prezzo =  $faker->sentence();
+            $newEcig -> description =  $faker->sentence();
             $newEcig -> save();
         }
 
